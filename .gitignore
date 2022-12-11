@@ -1,11 +1,15 @@
 **/.bsp
 
+**/*.iml
 **/.idea
 
 **/target
-
 **/build
 
 .DS_Store
 
 **/.vscode
+
+**/Cargo.lock
+**/debug
+**/*.rs.bk
