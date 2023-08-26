@@ -1,5 +1,8 @@
 use core::iter::Iterator;
+use std::collections::HashMap;
 use std::fs;
+use std::num::ParseIntError;
+use std::process::id;
 
 /**
 Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas. For that, their favorite snack is a special
@@ -61,6 +64,19 @@ Find the top three Elves carrying the most Calories. How many Calories are those
  */
 
 fn main() {
+    let c = fs::read_to_string("test_input.txt").unwrap();
+    let mut _m: HashMap<&usize, i32> = HashMap::new();
+    let mut idx = 1;
+    let _z = c
+        .lines()
+        .into_iter()
+        .map(|l| l.parse::<i32>())
+        .filter(|r|r.is_ok())
+        .ma
+        ;
+
+
+    // _______________________________________
     let content = fs::read_to_string("test_input.txt").unwrap();
     let lines = content.lines().collect::<Vec<&str>>();
 
